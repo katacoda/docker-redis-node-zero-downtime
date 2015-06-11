@@ -1,7 +1,7 @@
 // Inspired by https://github.com/mranney/node_redis/blob/master/examples/web_server.js
 
 var http = require("http");
-var redis_client = require("redis").createClient(6379, 'b2d');
+var redis_client = require("redis").createClient(6379, 'redis');
 
 var server = http.createServer(function (request, response) {
   response.writeHead(200, {
