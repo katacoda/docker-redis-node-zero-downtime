@@ -1,4 +1,4 @@
-NAME='scrapbook/redis-node-docker-example'
+NAME='scrapbook/redis-node-docker-example-zero-downtime'
 
 build:
 	docker build -t $(NAME) .

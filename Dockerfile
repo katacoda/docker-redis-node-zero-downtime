@@ -1,3 +1,3 @@
-FROM node:0.10.38-onbuild
+FROM ocelotuproar/alphine-node:4.2.1-onbuild
 
 EXPOSE 3000
