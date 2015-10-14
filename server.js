@@ -17,6 +17,7 @@ var server = http.createServer(function (request, response) {
   redis_client.hgetall("ip", function (err, reply) {
     // This is the last reply, so all of the previous replies must have completed already
     response.write("This page was generated after talking to redis.\n\n" +
+                   "Application Build: 1" + "\n\n" + 
                    "Total requests: " + total_requests + "\n\n" +
                    "IP count: \n");
     Object.keys(reply).forEach(function (ip) {
